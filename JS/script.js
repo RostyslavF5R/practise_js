@@ -10,12 +10,27 @@ const personalMovieDB = {
     privat: {}
 };
 
-const film = prompt("Якийсь фільм шариши", ""),
-    film1 = prompt("Якийсь фільм шариши", ""),
-    rating = prompt("Оціни", "7.1"),
-    rating1 = prompt("Оціни", "7.1");
+// for (let i = 0; i < 2; i++) {
+//     const film = prompt("Якийсь фільм шариши", ""),
+//         rating = prompt("Оціни", "");
 
-personalMovieDB.movies[film] = rating;
-personalMovieDB.movies[film1] = rating1;
+//     if (film === null || rating === null || film === '' || rating === '' || film.length > 50) {
+//         i--;
+//     } else {
+//         personalMovieDB.movies[film] = rating;
+//     }   
+// }
+
+if (personalMovieDB.count < 10) {
+    console.log("Мало кін бачив");
+} else if (personalMovieDB.count > 10 && personalMovieDB.count < 30) {
+    console.log("Рядовий глядач");
+} else {
+    console.log("Якийсь трохи кіноман");
+}
+
+
 
 console.log(personalMovieDB);
+
+
